@@ -13,7 +13,7 @@ public class surtting {
     {
         for(int count=0;count<arr.length-1;count++)
         {
-        for(int idx=0;idx<=arr.length-2;idx++)
+        for(int idx=0;idx<arr.length-1;idx++)
         {
              //bubble ? idx and idx+1!!
              if(arr[idx+1]<arr[idx])
