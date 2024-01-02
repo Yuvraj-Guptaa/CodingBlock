@@ -2,7 +2,7 @@ package Lecture04;
 
 public class primefactorization {
     public static void main(String[] args) {
-        int num=11;
+        int num=12;
         int div=2;
         while(num>1)
         {

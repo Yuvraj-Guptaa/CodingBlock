@@ -3,7 +3,8 @@ package Recursion;
 public class multiversemadnnes {
     public static void main(String[] args) {
         // coinToss(2, " ");
-        climbstairs(0, "",3);
+       // climbstairs(0, "",3);
+       subsequence("abcd", "");
     }
 
     public static void coinToss(int n, String pattern) {
@@ -30,12 +31,17 @@ public class multiversemadnnes {
     }
     public static void subsequence(String str,String path)
     {
+        if(str.isEmpty())
+        {
+            System.out.println(path);
+            return;
+        }
         //BP:"abc",""
         //SP:"bc"
         String sp=str.substring(1);
         char ch=str.charAt(0);
         subsequence(sp, path+ch);
-        subsequence(str, path);
+        subsequence(sp, path);
 
      }
 
