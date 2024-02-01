@@ -23,7 +23,7 @@ public class Lec1 {
             r++;
             c=0;
         }
-        place(r, c+1, QTP, path+"Q{}"+r, tR, tC);
+        place(r, c+1, QTP-1, path+"Q{}"+r, tR, tC);
         place(r, c+1, QTP, path, tR, tC);
     }
     public static void move(int r, int c, String path, int[][] board, boolean[][] Visited) {
